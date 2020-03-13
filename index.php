@@ -14,7 +14,7 @@ $options = [
 try {
      $pdo = new PDO($dsn, $user, $pass, $options);
      echo "Connected to db 'netland' met versie 5.7.26";
-} catch (\PDOException $e) {
-     throw new \PDOException($e->getMessage(), (int)$e->getCode());
+} catch (\PDOException $a) {
+     throw new \PDOException($a->getMessage(), (int)$a->getCode());
 }
 ?>
